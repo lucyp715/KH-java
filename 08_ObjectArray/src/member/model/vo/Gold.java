@@ -13,7 +13,7 @@ public class Gold extends Member{
 	}
 	@Override
 	public double getEjapoint() {
-		return getPoint() * 0.05;
+		return super.getPoint() * 0.05;
 	}
 	
 }

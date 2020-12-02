@@ -13,6 +13,6 @@ public class VVip extends Member{
 	}
 	@Override
 	public double getEjapoint() {
-		return getPoint() * 0.15;
+		return super.getPoint() * 0.15;
 	}
 }

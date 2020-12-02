@@ -15,6 +15,6 @@ public class Silver extends Member{
 	
 	@Override
 	public double getEjapoint() {
-		return getPoint() * 0.02;
+		return super.getPoint() * 0.02;
 	}
 	}

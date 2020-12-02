@@ -12,7 +12,7 @@ public class Vip extends Member{
 	}
 	@Override
 	public double getEjapoint() {
-		return getPoint() * 0.1;
+		return super.getPoint() * 0.1;
 
 	}
 }
