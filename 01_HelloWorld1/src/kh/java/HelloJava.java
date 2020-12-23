@@ -75,7 +75,7 @@ public class HelloJava {
 	 *  
 	 */
 	public void callMyName() {
-		System.out.println("홍길동!!!!");
+		System.out.println("홍길동!!!");
 	}
 
 	
