@@ -13,10 +13,10 @@ public class Casting {
 	public static void main(String[] args) {
 		
 		Casting c = new Casting();
-	//	c.test1();
+		c.test1();
 	//	c.test2();
 	//	c.test3();
-		c.test4();
+	//	c.test4();
 	}
 	
 	public void test4() {

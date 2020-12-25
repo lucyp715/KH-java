@@ -22,7 +22,7 @@ public class PrimitiveType {
 			p.test2();
 			p.test3();
 			p.test4();
-			p.test5();
+	//		p.test5();
 	}
 	
 	/**

@@ -12,7 +12,7 @@ public class StringTest {
 		
 		//기본형변수
 		boolean b = true;
-		char ch = '캬';
+		char ch = '카';
 		String str ="안녕하세요";
 		
 		

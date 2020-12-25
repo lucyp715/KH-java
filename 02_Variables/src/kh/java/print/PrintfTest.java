@@ -4,7 +4,7 @@ public class PrintfTest {
 	
 	public static void main(String[] args) {
 		PrintfTest p = new PrintfTest();
-		p.test1();
+	//	p.test1();
 		p.test2();
 	}
 	/**

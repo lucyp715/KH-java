@@ -18,9 +18,9 @@ public class ScannerTest {
 	public static void main(String[] args) {
 		
 		ScannerTest s = new ScannerTest();
-//		s.test1();
+		s.test1();
 //		s.test2();
-		s.test3();
+//		s.test3();
 	}
 	
 	/**
