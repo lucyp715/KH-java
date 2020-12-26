@@ -10,8 +10,7 @@ public class Account {
 	
 	/**
 	 * setter(private 있음 무조건 void)
-	 * 필드값 대입
-	 * -> 가까운게 있으면 가까운거부터 사용
+	 * 필드값 대입 -> 가까운게 있으면 가까운거부터 사용
 	 */
 //	public void setName(String name_) {
 //   	name = name_;
@@ -25,7 +24,7 @@ public class Account {
 	}
 	
 	public void setBalance(long balance_) {
-		this.balance = balance;
+		this.balance = balance_;
 	}
 	
 	/**

@@ -7,7 +7,7 @@ import java.util.Random;
  * 1. 타입별 기본값이 세팅 int num
  * 2. 초기값 int num = 100;
  * 3. 초기화블럭에서 대입한 값 int num=100; 아래에 {}
- * 4. 생성자(깩체생성시 호출되는 메소드)에서 대입한 값
+ * 4. 생성자(객체생성시 호출되는 메소드)에서 대입한 값
  * 
  * 클래스 변수 초기화 과정
  * 1. 타입별 기본값
@@ -20,12 +20,12 @@ import java.util.Random;
 
 public class Sample {
 	
-	static int sno = 111;
-	static {
-		System.out.println("static 초기화 블럭시작 : " + sno);
-		sno = 333;
-		System.out.println("static 초기화 블럭끝 : " + sno);
-	}
+//	static int sno = 111;
+//	static {
+//		System.out.println("static 초기화 블럭시작 : " + sno);
+//		sno = 333;
+//		System.out.println("static 초기화 블럭끝 : " + sno);
+//	}
 	
 	
 	
@@ -44,7 +44,7 @@ public class Sample {
 	public Sample() {
 		System.out.println("생성자 시작 : " + num);
 		num = 300;
-		System.out.println("생성자 시작 : " + num);
+		System.out.println("생성자 끝 : " + num);
 		
 	}
 

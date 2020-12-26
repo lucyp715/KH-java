@@ -4,8 +4,8 @@ public class FieldTestMain {
 
 	public static void main(String[] args) {
 		FieldTest f = new FieldTest();
-//		f.test1();
-//		f.test2();
+		f.test1();
+		f.test2();
 		
 		FieldTest k = new FieldTest();
 		f.test3(k); //1

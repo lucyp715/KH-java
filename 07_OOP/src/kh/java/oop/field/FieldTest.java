@@ -28,7 +28,7 @@ public class FieldTest {
 		FieldTest t =new FieldTest();
 		t.a = 300;
 		
-		System.out.println(a); //this.a -> f.test2했기떄문에
+		System.out.println(a); //100 this.a -> f.test2했기때문에
 	}
 	
 	/**

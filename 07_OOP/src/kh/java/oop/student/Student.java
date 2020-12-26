@@ -28,7 +28,7 @@ package kh.java.oop.student;
 public class Student {
 	//속성(상태)
 	private String name;
-	private char gender;
+	char gender;
 	private int age;
 	
 	//기능

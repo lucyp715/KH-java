@@ -2,7 +2,7 @@ package kh.java.oop.method;
 
 /**
  * 메소드 오버로딩 Overloading
- * 한 클래스내에서 동일한 이름, 매개변수 선언부가 다 른 메소드를 선언하는 것
+ * 한 클래스내에서 동일한 이름, 매개변수 선언부가 다른 메소드를 선언하는 것
  * 
  * 조건
  * -메소드명이 동일해야한다.
@@ -28,9 +28,9 @@ public class MethodOverloadingTest {
 	public void test(int a, String s) {}
 	public void test(String s, int a) {} //
 
-//	public void tes(int b, int a) {} //매개변수명은 상관치 않는다.
+//	public void test(int b, int a) {} //매개변수명은 상관치 않는다.
 //	public int test() { // 리턴타입은 상관하지 않는다.
 //		return 100;
 //	}
-//	private void teset() {} // 접근제한자는 상관치 않는다.
+//	private void test() {} // 접근제한자는 상관치 않는다.
 }
