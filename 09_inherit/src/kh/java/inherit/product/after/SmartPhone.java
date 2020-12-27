@@ -27,6 +27,7 @@ public class SmartPhone extends Computer{
 				getOs() + "," + carrier;
 	}
 	
+	@Override
 	public String getProductInfo() {
 		return super.getProductInfo() + "," + carrier;
 	}

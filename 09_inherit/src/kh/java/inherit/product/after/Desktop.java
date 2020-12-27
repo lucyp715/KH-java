@@ -66,4 +66,5 @@ public class Desktop extends Computer{
 		return super.getProductInfo() + "," +
 				monitor + "," + keyboard;
 	}
+
 }

@@ -22,7 +22,7 @@ public class Television extends Product{
 		return getBrand() + "," + getProductName() + "," + getPrice() + "," +
 				size;
 	}
-	
+	@Override
 	public String getProductInfo() {
 		return super.getProductInfo() + "," + size;
 	}

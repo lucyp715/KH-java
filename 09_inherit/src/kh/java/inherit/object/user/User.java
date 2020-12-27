@@ -55,29 +55,40 @@ public final class User {
 		return "[username = " + username + ", password =" + password +"]";
 	}
 	
-//	class UserDetail extends User{} ->final 은 쓸수없다
-	
-//	public boolean equals(Object obj) {
-		//Obj.username Object타입은
-//		User other = (User)obj; 
+	/**
+	 * 필드값 username, password가 같다면 동일한 객체로 취급
+	 */
+	@Override
+	public boolean equals(Object obj) {
+		//Obj.username Object타입은 username, password 필드에 접근할수없다
+		User other = (User)obj;  //Object 타입을 User타입으로 형변환
 		
-//		if(!username.contentEquals(other.username))
-//			return false;
-//		if(!password.contentEquals(other.password))
-//			return false;
-//	}
+		if(!username.contentEquals(other.username))
+			return false; 
+		if(!password.contentEquals(other.password))
+			return false;
+		return true;
+	}
+	/**
+	 * equals 비교에 사용했던 필드값을 가져와 hashCode 생성에 사용
+	 * 문자열 hashCode 생성사용
+	 */
+	@Override
 	public int hashCode() {
 		return (username + password).hashCode();
 	}
+	
 	/**
 	 * 공변반환타입 Covariant Return Type
 	 * 오버라이딩시 부모메서드의 반환타입을 자식클래스타입으로 변경 가능
 	 * jdk1.5
 	 */
-	
+	@Override
 	public User clone() {
 		//복사 생성자
 		return new User(this);
 	}
 
 }
+
+//	class UserDetail extends User{} ->final 은 쓸수없다

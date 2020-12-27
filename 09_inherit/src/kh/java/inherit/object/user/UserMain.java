@@ -4,14 +4,15 @@ public class UserMain {
 
 	public static void main(String[] args) {
 		UserMain um = new UserMain();
-		um.test1();
+//		um.test1();
 //		um.test2();
-//		um.test3();
+		um.test3();
 
 	}
 	public void test3() {
 		User user = new User("sinsa", "1234");
-		User copy = user.clone();
+		User copy = user.clone(); 
+		//override전에는 상속값안에서 사용가능 밖에서는 사용불가
 		
 		System.out.println(user);
 		System.out.println(copy);
