@@ -7,7 +7,7 @@ public class AnimalMain {
 //		am.test1();
 //		am.test2();
 //		am.test3();
-//		am.test4();
+		am.test4();
 
 	}
 	/**
@@ -109,7 +109,7 @@ public class AnimalMain {
 		tiger.punch();
 		
 		a1.say();
-//		a1.punch(); 
+//		a1.punch();  
 		// 자식객체를 부모타입 참조변수에 담으면
 		//자식클래스에서 선언된 메소드는 사용할 수 없다.
 		

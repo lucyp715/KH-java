@@ -15,12 +15,76 @@ package kh.java.polymorphsim.animal;
 public class AbstractAnimalMain {
 	public static void main(String[] args) {
 		AbstractAnimalMain aam = new AbstractAnimalMain();
-		aam.test1();
+//		aam.test1();
+//		aam.test2();
+//		aam.test3();
+		aam.test4();
 	}
-	
+	/**
+	 * @실습문제 : Animal클래스를 상속하고, 
+	 * Flyable인터페이스를 구현한 Eagle클래스를 작성하세요.
+	 *    Flyable인터페이스
+                    추상메소드 : void fly()
+                     상수필드 : int NUM_OF_WINGS = 2
+                    출력 : "안녕하세요, 이글이글입니다."
+ 		    "독수리가 2날개로 시속128km로 납니다."
+	 */
+	public void test4() {
+		Eagle eagle = new Eagle();
+		eagle.say();
+		eagle.fly();
+		
+		
+	}
+	public void test3() {
+		System.out.println(Runnable.NUM_OF_LEGS);
+		
+		Runnable rTiger = new Tiger();
+		rTiger.run();
+		
+		Runnable rLion = new Lion();
+		rLion.run();
+		
+		Runnable[] arr = new Runnable[3];
+		arr[0] = rTiger;
+		arr[1] = rLion;
+		
+		for(Runnable r : arr) {
+			if(r != null)
+				r.run();
+		}
+	}
+	/**
+	 *인터페이스
+	 */
+	public void test2() {
+//		Barkable b = new Barkable();
+		// 자기 자신을 객체화 할수 없기때문에 사용불가  그래서,
+		Barkable bLion = new Lion(); // 자식클래스가 후반부에 오게된다
+		bLion.bark();
+		
+		Barkable bTiger = new Tiger();
+		bTiger.bark();
+		
+		//위와 동일한하다 배열로 정리했을뿐
+		
+		Barkable[] arr = new Barkable[2];
+		arr[0] = bLion;
+		arr[1] = bTiger;
+		
+		for(Barkable b : arr)
+			b.bark();
+		
+		//주의점
+		//Barkable타입 참조변수에 담기면
+		//Barkable인터페이스가 가진 메소드만 사용가능
+//		bLion.say();
+		((Lion)bLion).say();
+		((Animal)bLion).say();
+	}
 	public void test1() {
 		//추상클래스는 객체화 할수 없다.
-		Animal a = new Animal();
+//		Animal a = new Animal();
 		
 	}
 
