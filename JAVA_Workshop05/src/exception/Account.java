@@ -59,6 +59,7 @@ public class Account {
 				throw new Exception("출금 금액이 0보다 적거나 현재 잔액보다 많습니다");
 			}
 			this.balance -=money;
+	
 		}
 	
 }

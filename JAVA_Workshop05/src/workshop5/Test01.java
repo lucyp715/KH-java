@@ -16,6 +16,7 @@ public class Test01 {
 			System.out.print(arr[i]);
 		}
 		
+		
 	}
 
 }

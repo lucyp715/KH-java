@@ -15,5 +15,6 @@ public class Test03 {
 				System.out.print(arr2[i][j] + " ");
 
 		}
+		
 	}
 }

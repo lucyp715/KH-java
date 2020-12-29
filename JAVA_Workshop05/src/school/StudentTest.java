@@ -8,6 +8,7 @@ public class StudentTest {
 		double sumHight = 0;
 		double sumWigth = 0;
 		
+		
 		Student [] studentArray = new Student[3];
 
 		studentArray[0] = new Student("홍길동", 15, 171, 81);	

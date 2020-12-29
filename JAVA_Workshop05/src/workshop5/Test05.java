@@ -12,4 +12,5 @@ public class Test05 {
 		System.out.println(str.substring(2));		//cns
 	}
 
+	
 }

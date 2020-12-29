@@ -11,6 +11,7 @@ public class AccountTest {
 
 		// account 에 -10원 입금 – Exception 처리
 		try {
+			
 			a.deposit(-10);
 		} catch (Exception e) {
 			System.out.println(e.getMessage());		
