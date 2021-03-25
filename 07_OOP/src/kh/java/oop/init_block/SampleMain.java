@@ -7,7 +7,6 @@ public class SampleMain {
 		//인스턴스변수는 객체생성사 만들어진다.
 		new Sample();
 		
-		
 		System.out.println("-----종료-----");
 
 	}

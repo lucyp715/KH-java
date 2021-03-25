@@ -20,6 +20,7 @@ public class CallByValueCallByReference {
 		
 		//1.call by value : 값(리터럴)이 복사되는 경우
 		c.test(a);
+//		a = c.test(a);
 		System.out.println(a);
 		
 		//2.call by reference : 
@@ -28,12 +29,14 @@ public class CallByValueCallByReference {
 		
 		
 	}
-	
+	// int, char, boolean, float, double, long, short
 	public void test(int x) { //실제 원본값에 아무영향도 미치지않는다.)
 		x *=100;
-	
-		
 	}
+//	public int test(int x) { //실제 원본값에 아무영향도 미치지않는다.)
+//		x *=100;
+//		return x;
+//	}
 	
 	public void test(int[] arr) {
 		arr[0] *= 100;
