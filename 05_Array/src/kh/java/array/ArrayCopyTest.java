@@ -9,7 +9,14 @@ package kh.java.array;
  * - 실제 배열(heap)을 복사
  */
 
+// 배열 a , 배열 b
+// 배열 a를 얕은 복사 한게 배열 b
+// 얕은 복사 -> 주소값
+// 배열은 힙에 만들어지는데, 이 힙에 만들어진 a의 공간을 b에서도 가리킨다.
+// a를 변경하면 b도 변경이 된다. b를 변경해도 a도 변경된다.
 
+// 깊은 복사 : 배열이 가지고 있는 값만 복사
+// a를 변경해도 b에는 변경이 일어나지 않음. 반대도 동일.
 
 
 public class ArrayCopyTest {
@@ -18,13 +25,13 @@ public class ArrayCopyTest {
 		
 		ArrayCopyTest a = new ArrayCopyTest();
 //		a.test1();
-//		a.test2();
-		a.test3();
+		a.test2();
+//		a.test3();
 	}
 	/**
 	 * /**
-	 * r깊은 복사2
-	 * -clone
+	 *  깊은 복사2
+	 * - clone
 	 * - system.arrayCopy
 	 * 
 	 */
@@ -96,6 +103,7 @@ public class ArrayCopyTest {
 		printArr(arr1);
 		printArr(arr2);
 	}
+	
 	
 	public void printArr(byte[] arr) {
 		for(int i =0; i < arr.length; i++) {

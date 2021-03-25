@@ -145,12 +145,12 @@ public class ArrayTest {
 	}
 
 	public void test1() {
-		//변수공간은 초기회되장ㄶ고, 쓰레기값이 들어있다.
+		//변수공간은 초기회되지않고, 쓰레기값이 들어있다.
 		int kor = 80;
 		int eng = 100;
 		int math = 90;
 		
-		//callstck의 초기화(값대입) 하지 않고는 사용할 수 없다.
+		//callstack의 초기화(값대입) 하지 않고는 사용할 수 없다.
 		System.out.println(kor);
 		System.out.println(eng);
 		System.out.println(math);
